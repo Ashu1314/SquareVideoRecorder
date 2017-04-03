@@ -17,7 +17,7 @@ OpenGL ES纹理贴图
 ### 5.音乐混合（背景音乐和录音混合）实现方式：
 ffmpeg  filter_complex 命令
 <br/><br/><br/>
-## 效果展示：
+效果展示：
 <br/>
 
 ![视频拍摄](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/4.png "视频拍摄")
