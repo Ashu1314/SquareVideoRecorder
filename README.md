@@ -1,8 +1,7 @@
 # SquareVideoRecorder 正方形 短视频 分段 录制<br/>
 
 ## 主要流程说明：
-<br/><br/>
-
+<br/>
 ### 1.方形 视频 预览 实现流程：
 Camera 获取数据 ---> OpenGL ES 切割成正方形 ---> SurfaceView显示
 <br/><br/>
@@ -17,3 +16,9 @@ OpenGL ES纹理贴图
 <br/><br/>
 ### 5.音乐混合（背景音乐和录音混合）实现方式：
 ffmpeg  filter_complex 命令
+<br/><br/><br/>
+## 效果展示：
+
+[id]: http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png  "视频拍摄"
+
+[id]: url/to/image  "Optional title attribute"
