@@ -21,5 +21,6 @@ ffmpeg  filter_complex 命令
 <br/>
 
 ![视频拍摄](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/4.png "视频拍摄")
-![视频编辑](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/4.png "视频编辑")
-![添加字幕](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/4.png "添加字幕") 
+![视频编辑](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/5.png "视频编辑")
+![添加字幕](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/6.png "添加字幕") 
+![添加音乐](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/7.png "添加音乐") 
