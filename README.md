@@ -18,7 +18,8 @@ OpenGL ES纹理贴图
 ffmpeg  filter_complex 命令
 <br/><br/><br/>
 ## 效果展示：
+<br/>
 
-[id]: http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png  "视频拍摄"
-
-[id]: url/to/image  "Optional title attribute"
+![视频拍摄](http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png "视频拍摄")
+![视频编辑](http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png "视频编辑")
+![添加字幕](http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png "添加字幕") 
