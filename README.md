@@ -20,6 +20,6 @@ ffmpeg  filter_complex 命令
 ## 效果展示：
 <br/>
 
-![视频拍摄](http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png "视频拍摄")
-![视频编辑](http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png "视频编辑")
-![添加字幕](http://www.jarvisyin.com/project_pic/img/OyesSeller/4.png "添加字幕") 
+![视频拍摄](/demo_pic/4.png "视频拍摄")
+![视频编辑](/demo_pic/4.png "视频编辑")
+![添加字幕](/demo_pic/4.png "添加字幕") 
