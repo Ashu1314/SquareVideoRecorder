@@ -10,7 +10,7 @@ import com.jarvisyin.recorder.Home.VideoRecord.Common.Utils.ShaderUtils;
  * Created by jarvisyin on 16/11/16.
  */
 public class FullFrameRect {
-    private final Drawable2d mRectDrawable = Drawable2d.getInstance();
+    private final Drawable2d mRectDrawable;
     private Texture2dProgram mProgram;
 
     /**
@@ -19,8 +19,9 @@ public class FullFrameRect {
      * @param program The program to use.  FullFrameRect takes ownership, and will release
      *                the program when no longer needed.
      */
-    public FullFrameRect(Texture2dProgram program) {
+    public FullFrameRect(Texture2dProgram program, Drawable2d rectDrawable) {
         mProgram = program;
+        mRectDrawable = rectDrawable;
     }
 
     /**

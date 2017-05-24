@@ -34,20 +34,6 @@ public class Drawable2d {
     private int mVertexStride;
     private int mTexCoordStride;
 
-
-    private static Drawable2d instance;
-
-    public static Drawable2d getInstance() {
-        if (instance == null) {
-            synchronized (Drawable2d.class) {
-                if (instance == null) {
-                    instance = new Drawable2d();
-                }
-            }
-        }
-        return instance;
-    }
-
     /**
      * Prepares a drawable from a "pre-fabricated" shape definition.
      * <p/>
@@ -172,26 +158,6 @@ public class Drawable2d {
             FULL_RECTANGLE_COORDS[7] = p;
 
         }
-
-        /*
-        //A
-        FULL_RECTANGLE_COORDS[0] /= 2;
-        FULL_RECTANGLE_COORDS[1]  /= 2;
-
-        //B
-        FULL_RECTANGLE_COORDS[2]  /= 2;
-        FULL_RECTANGLE_COORDS[3]  /= 2;
-
-        //C
-        FULL_RECTANGLE_COORDS[4]  /= 2;
-        FULL_RECTANGLE_COORDS[5] /= 2;
-
-        //D
-        FULL_RECTANGLE_COORDS[6]  /= 2;
-        FULL_RECTANGLE_COORDS[7]  /= 2;
-        */
-
-
 
         float FULL_RECTANGLE_TEX_COORDS[] = {
                 0.0f, 0.0f,     // 0 bottom left
