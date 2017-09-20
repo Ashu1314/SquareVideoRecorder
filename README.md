@@ -8,7 +8,7 @@ Camera 获取数据 ---> OpenGL ES 切割成正方形 ---> SurfaceView显示
 Camera 获取数据 ---> OpenGL ES 切割成正方形 ---> MediaCodec编码 ---> MediaMuxer封装，保存本地
 <br/><br/>
 ### 3.n段视频连接 实现方式：
-ffmpeg  concat 命令
+Android API MediaMuxer
 <br/><br/>
 ### 4.添加字幕 实现方式：
 OpenGL ES纹理贴图
@@ -17,6 +17,11 @@ OpenGL ES纹理贴图
 ffmpeg  filter_complex 命令
 <br/><br/><br/>
 ## 效果展示：
+<br/>
+<br/>
+
+PS：每一段音频数据在个别设备中会比视频数据少 0.5s ，造成最终的音频比视频短，不能同步。原因未知，问题没解决
+<br/>
 <br/>
 
 ![视频拍摄](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/4.png "视频拍摄")

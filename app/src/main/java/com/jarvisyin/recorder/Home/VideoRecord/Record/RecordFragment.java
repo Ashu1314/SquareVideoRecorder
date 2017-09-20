@@ -23,7 +23,7 @@ import com.jarvisyin.recorder.Home.VideoRecord.Common.VideoBaseFragment;
 import com.jarvisyin.recorder.Home.VideoRecord.Common.Widget.VideoActionButton;
 import com.jarvisyin.recorder.Home.VideoRecord.Common.Widget.VideoProgressBar;
 import com.jarvisyin.recorder.Home.VideoRecord.Edit.EditFragment;
-import com.jarvisyin.recorder.Home.VideoRecord.Edit.RecordFinishProcessor;
+import com.jarvisyin.recorder.Home.VideoRecord.Edit.MediaMuxerRecordFinishProcessor;
 import com.jarvisyin.recorder.Home.VideoRecord.Record.Gles.CameraUtils;
 import com.jarvisyin.recorder.Home.VideoRecord.Record.Gles.Drawable2d;
 import com.jarvisyin.recorder.Home.VideoRecord.Record.Gles.EglCore;
@@ -108,9 +108,9 @@ public class RecordFragment extends VideoBaseFragment implements View.OnClickLis
         switch (v.getId()) {
             case R.id.next:
                 dialog.show();
-                new RecordFinishProcessor(mContext) {
+                new MediaMuxerRecordFinishProcessor(mContext) {
                     @Override
-                    public void onSuccess(String message) {
+                    public void onSuccess() {
                         dialog.dismiss();
                         getBaseActivity().replaceFragmentWithAnim(new EditFragment());
                     }

@@ -34,7 +34,7 @@ public class CircularEncoder {
     private MediaCodec mEncoder;
     private MediaFormat mFormat;
     private final MediaMuxer mMuxer;
-    private final FileOutputStream mOutputStream;
+    //private final FileOutputStream mOutputStream;
     private final byte[] bytes = new byte[1024 * 256];
     private final EncoderThread mEncoderThread;
 
@@ -66,7 +66,7 @@ public class CircularEncoder {
         mEncoderThread.waitUntilReady();
 
         mMuxer = new MediaMuxer(blockInfo.getVideoFile().getPath(), MediaMuxer.OutputFormat.MUXER_OUTPUT_MPEG_4);
-        mOutputStream = new FileOutputStream(blockInfo.getVideoFile().getPath() + "stream_data");
+        //mOutputStream = new FileOutputStream(blockInfo.getVideoFile().getPath() + "stream_data");
     }
 
     public Surface getInputSurface() {
@@ -200,12 +200,11 @@ public class CircularEncoder {
                         mMuxer.writeSampleData(mVideoTrack, encoderData, mBufferInfo);
                         encoderData.get(bytes, 0, mBufferInfo.size);
 
-                        try{
+                        /*try{
                             mOutputStream.write(bytes,0,mBufferInfo.size);
                         }catch (Exception e){
 
-                        }
-
+                        }*/
 
                         if (mBlockInfo.getStartTime() == 0) {
                             mBlockInfo.setStartTime(mBufferInfo.presentationTimeUs);
@@ -233,11 +232,11 @@ public class CircularEncoder {
                 mMuxer.release();
             }
 
-            try {
+            /*try {
                 mOutputStream.close();
             }catch (Exception e){
                 e.printStackTrace();
-            }
+            }*/
 
             mBlockInfo.setFrameCount(mFrameNum);
             mCallback.fileSaveComplete(result, mFrameNum);

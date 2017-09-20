@@ -15,13 +15,13 @@ import java.util.List;
 /**
  * Created by jarvisyin on 16/12/9.
  */
-public class RecordFinishProcessor {
-    private final static String TAG = "VShopVideo RecordFinishProcessor";
+public class FFmpegRecordFinishProcessor {
+    private final static String TAG = "VShopVideo FFmpegRecordFinishProcessor";
 
     private final VideoRecordActivity mContext;
     private File mVideoListFile, mAudioListFile;
 
-    public RecordFinishProcessor(VideoRecordActivity context) {
+    public FFmpegRecordFinishProcessor(VideoRecordActivity context) {
         mContext = context;
     }
 
@@ -111,7 +111,7 @@ public class RecordFinishProcessor {
             @Override
             public void onFailure(String message) {
                 JYLog.d(TAG, "ffmpegCmd: onFailure");
-                RecordFinishProcessor.this.onFailure(message);
+                FFmpegRecordFinishProcessor.this.onFailure(message);
             }
 
             @Override
@@ -137,7 +137,7 @@ public class RecordFinishProcessor {
             @Override
             public void onFailure(String message) {
                 JYLog.d(TAG, "ffmpegCmd: onFailure");
-                RecordFinishProcessor.this.onFailure(message);
+                FFmpegRecordFinishProcessor.this.onFailure(message);
             }
 
             @Override
@@ -152,10 +152,10 @@ public class RecordFinishProcessor {
         FileUtil.copy(mContext.getSourceAudioPath(), mContext.getProcessingAudioPath());
         FileUtil.copy(mContext.getSourceVideoPath(), mContext.getProcessingVideoPath());
 
-        RecordFinishProcessor.this.onSuccess(null);
+        FFmpegRecordFinishProcessor.this.onSuccess(null);
     }
 
-    public void onSuccess(String message) {
+    public void onSuccess() {
     }
 
     public void onFailure(String message) {
