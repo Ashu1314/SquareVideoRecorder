@@ -15,13 +15,11 @@ OpenGL ES纹理贴图
 <br/><br/>
 ### 5.音乐混合（背景音乐和录音混合）实现方式：
 ffmpeg  filter_complex 命令
-<br/><br/><br/>
-## 效果展示：
-<br/>
-<br/>
-
+<br/><br/>
 PS：每一段音频数据在个别设备中会比视频数据少 0.5s ，造成最终的音频比视频短，不能同步。原因未知，问题没解决
 <br/>
+<br/>
+## 效果展示：
 <br/>
 
 ![视频拍摄](https://github.com/jarvisyin/SquareVideoRecorder/blob/master/demo_picture/4.png "视频拍摄")
