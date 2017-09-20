@@ -143,7 +143,6 @@ public class MusicTransfer extends Thread {
             @Override
             public void onSuccess(String message) {
                 moveACCdeleteCache();
-                Log.i("FUCK", "stop");
             }
         });
     }

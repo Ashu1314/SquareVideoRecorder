@@ -152,7 +152,7 @@ public class FFmpegRecordFinishProcessor {
         FileUtil.copy(mContext.getSourceAudioPath(), mContext.getProcessingAudioPath());
         FileUtil.copy(mContext.getSourceVideoPath(), mContext.getProcessingVideoPath());
 
-        FFmpegRecordFinishProcessor.this.onSuccess(null);
+        FFmpegRecordFinishProcessor.this.onSuccess();
     }
 
     public void onSuccess() {
